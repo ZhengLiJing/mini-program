@@ -1,0 +1,9 @@
+
+<template name="observation">
+  <view class="post-like">
+    <image class="post-like-image" src="{{view_img}}"></image>
+    <text class="post-like-font">{{view_num}}</text>
+    <image class="post-like-image" src="/image/icon/view.png"></image>
+    <text class="post-like-font">{{collect_num}}</text>
+  </view>
+</template>

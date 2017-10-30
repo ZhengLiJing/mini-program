@@ -1,0 +1,19 @@
+<import src="../observation/observation-template.wxml" />
+<template name="postItem">
+    <view class="post-container">
+         <view class="post-author-date" >
+                <image class="post-author" src="{{authorImg}}"></image>
+                <text class="post-date">{{date}}</text>
+        </view>
+            <text class="post-title">{{title}}</text>
+            <image class="post-image" src="{{post_img}}"></image>
+            <text class="post-content">{{content}}</text>
+            <template is="observation" data="{{view_img:view_img , view_num:view_num , collect_num:collect_num}}"/>
+            <!--<view class="post-like">
+                <image class="post-like-image" src="{{view_img}}"></image>
+                <text class="post-like-font">{{view_num}}</text>
+                <image class="post-like-image"  src="/image/icon/view.png"></image>
+                <text class="post-like-font">{{collect_num}}</text>
+            </view>-->
+    </view>
+</template>
